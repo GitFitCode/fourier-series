@@ -25,5 +25,5 @@ function draw() {
   // draw a line from main circle center to the point(x,y)
   line(0, 0, x, y);
 
-  timeOrAngle += 0.01;
+  timeOrAngle -= 0.01;
 }
