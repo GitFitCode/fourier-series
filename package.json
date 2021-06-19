@@ -1,5 +1,5 @@
 {
-    "name": "fourier-series",
+    "name": "fourier-series-and-transform",
     "version": "0.1.0",
     "scripts": {
       "dev": "vite",

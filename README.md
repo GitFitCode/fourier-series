@@ -1,4 +1,4 @@
-# fourier-series
+# fourier-series-and-transform
 
 ## Run Project
 
