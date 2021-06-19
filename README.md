@@ -10,3 +10,7 @@ pnpm dev
 ```
 
 When the process is running, open http://localhost:3000 in any browser.
+
+## Progress
+
+![Progress](./media/progress.gif)
