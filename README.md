@@ -2,7 +2,7 @@
 
 ## Run Project
 
-**Note**: The project uses `pnpn` package manager. More info [here](https://pnpm.io/).
+**Note**: The project uses `pnpm` package manager. More info [here](https://pnpm.io/).
 
 ```sh
 pnpm install
