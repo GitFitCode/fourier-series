@@ -1,14 +1,21 @@
 let theta = 0;
 let waveArray = []; // to store 'y' values of the generated wave
 let scaleFactor = 75; // factor to scale up circles
-let precisionFactor = 50; // # of partial sums in fourier series
+let precisionSliderText;
+let precisionSlider; // user input slider for # of partial sums in fourier series
 
 function setup() {
   createCanvas(800, 600);
+  precisionSliderText = createDiv("Precision Factor (1 to 100):");
+  precisionSlider = createSlider(1, 100, 50);
 }
 
 function draw() {
   background(0);
+
+  text("N (precision factor) = " + precisionSlider.value(), 10, 20);
+  text("Theta = " + theta, 10, 40);
+  text("Scale Factor = " + scaleFactor, 10, 60);
 
   // move viewport away from screen edge
   // top-left corner always starts out as (0,0)
@@ -18,7 +25,7 @@ function draw() {
   let posX = 0;
   let posY = 0;
 
-  for (i = 0; i < precisionFactor; i++) {
+  for (i = 0; i < precisionSlider.value(); i++) {
     let prevPosX = posX;
     let prevPosY = posY;
 
