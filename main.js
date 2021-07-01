@@ -1,4 +1,4 @@
-let timeOrAngle = 0;
+let theta = 0;
 let waveArray = []; // to store 'y' values of the generated wave
 let scaleFactor = 75; // factor to scale up circles
 let precisionFactor = 50; // # of partial sums in fourier series
@@ -35,10 +35,10 @@ function draw() {
     ellipse(prevPosX, prevPosY, radius * 2);
 
     // calculate instantaneous position for a point on current circle
-    // calculated based on `timeOrAngle`
+    // calculated based on `theta`
     // aka polar to cartesian transformation
-    posX += radius * cos(N * timeOrAngle);
-    posY += radius * sin(N * timeOrAngle);
+    posX += radius * cos(N * theta);
+    posY += radius * sin(N * theta);
 
     stroke(255);
     // draw a line from current circle center (prevPosX, prevPosY) to the instantaneous point(posX,posY)
@@ -60,9 +60,9 @@ function draw() {
   //draw a line from the filled circle to the start of the "wave" i.e. waveArray[]
   line(posX - 200, posY, 0, waveArray[0]);
 
-  // decrement timeOrAngle for anti-clockwise rotation
-  // increment timeOrAngle for clockwise rotation
-  timeOrAngle -= 0.05;
+  // decrement theta for anti-clockwise rotation
+  // increment theta for clockwise rotation
+  theta -= 0.05;
 
   // clean waveArray[] if it gets too big
   if (waveArray.length >= 500) waveArray.pop();
