@@ -64,6 +64,6 @@ function draw() {
   // increment timeOrAngle for clockwise rotation
   timeOrAngle -= 0.05;
 
-  // clean waveArray[] if it gets too bit
+  // clean waveArray[] if it gets too big
   if (waveArray.length >= 500) waveArray.pop();
 }
