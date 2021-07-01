@@ -1,3 +1,5 @@
 https://en.wikipedia.org/wiki/Fourier_series#Convergence
 https://www.youtube.com/watch?v=r6sGWTCMz2k
 https://p5js.org/reference/
+https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/
+https://bilimneguzellan.net/en/purrier-series-meow-and-making-images-speak/
