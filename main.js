@@ -3,11 +3,17 @@ let waveArray = []; // to store 'y' values of the generated wave
 let scaleFactor = 75; // factor to scale up circles
 let precisionSliderText;
 let precisionSlider; // user input slider for # of partial sums in fourier series
+let speedSliderText;
+let speedSlider; // user input slider for delta to be added to theta in fourier series (i.e. how quickly do we animate!)
 
 function setup() {
   createCanvas(800, 600);
-  precisionSliderText = createDiv("Precision Factor (1 to 100):");
-  precisionSlider = createSlider(1, 100, 50);
+
+  precisionSliderText = createDiv("N (precision factor) (1 to 100):");
+  precisionSlider = createSlider(1, 100, 50, 1);
+
+  speedSliderText = createDiv("Speed Factor (0.01 to 0.1):");
+  speedSlider = createSlider(0.01, 0.1, 0.05, 0.01);
 }
 
 function draw() {
@@ -16,6 +22,7 @@ function draw() {
   text("N (precision factor) = " + precisionSlider.value(), 10, 20);
   text("Theta = " + theta, 10, 40);
   text("Scale Factor = " + scaleFactor, 10, 60);
+  text("Speed Factor = " + speedSlider.value(), 10, 80);
 
   // move viewport away from screen edge
   // top-left corner always starts out as (0,0)
@@ -68,8 +75,9 @@ function draw() {
   line(posX - 200, posY, 0, waveArray[0]);
 
   // decrement theta for anti-clockwise rotation
+  // theta -= speedSlider.value();
   // increment theta for clockwise rotation
-  theta -= 0.05;
+  theta += speedSlider.value();
 
   // clean waveArray[] if it gets too big
   if (waveArray.length >= 500) waveArray.pop();
