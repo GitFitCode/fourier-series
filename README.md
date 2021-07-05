@@ -5,7 +5,7 @@
 **Note**: The project uses `pnpm` package manager. More info [here](https://pnpm.io/).
 
 ```sh
-pnpm install
+pnpm i # pnpm install
 pnpm dev
 ```
 

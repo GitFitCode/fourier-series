@@ -21,10 +21,10 @@ function setup() {
 function draw() {
   background(0);
 
-  text("Precision factor = " + precisionSlider.value(), 10, 20);
+  text("Precision factor (1 to 100) = " + precisionSlider.value(), 10, 20);
   text("Theta = " + theta, 10, 40);
   text("Scale Factor = " + scaleFactor, 10, 60);
-  text("Speed Factor = " + speedSlider.value(), 10, 80);
+  text("Speed Factor (0.01 to 0.1) = " + speedSlider.value(), 10, 80);
 
   // move viewport away from screen edge
   // top-left corner always starts out as (0, 0)

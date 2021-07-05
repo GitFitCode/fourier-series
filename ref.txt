@@ -2,4 +2,7 @@ https://en.wikipedia.org/wiki/Fourier_series#Convergence
 https://www.youtube.com/watch?v=r6sGWTCMz2k
 https://p5js.org/reference/
 https://betterexplained.com/articles/an-interactive-guide-to-the-fourier-transform/
+https://bilimneguzellan.net/en/follow-up-to-fourier-series-2/
 https://bilimneguzellan.net/en/purrier-series-meow-and-making-images-speak/
+https://en.wikipedia.org/wiki/Discrete_Fourier_transform
+https://www.algorithm-archive.org/contents/cooley_tukey/cooley_tukey.html
